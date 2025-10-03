@@ -4,9 +4,9 @@
     "apellido": "Rojas Castañon"
   },
   "evento": {
-    "fecha": "2025-10-18T17:00:00",
+    "fecha": "2025-10-18T14:00:00",
     "fechaTexto": "Sabado 18 de Octubre, 2025",
-    "horaInicio": "5:30 PM"
+    "horaInicio": "2:30 PM"
   },
   "lugar": {
     "nombre": "Finca las Antorchas",
@@ -16,7 +16,7 @@
     "googleMapsUrl": "https://maps.app.goo.gl/M4rJ5WZ2vh3SriUn9"
   },
   "calendario": {
-    "fechaInicio": "20251018T230000Z",
+    "fechaInicio": "20251018T200000Z",
     "fechaFin": "20251018T280000Z",
     "titulo": "XV Años de Zoe",
     "descripcion": "Celebración de los XV años de Zoe - ¡No te lo pierdas!"
@@ -50,7 +50,7 @@
   "vestimenta": {
     "tipo": "Formal / Elegante",
     "descripcion": "Te pedimos venir vestido(a) para hacer de esta noche algo muy especial",
-    "sugerencias": ["Colores pasteles", "Tonos neutros"],
+    "sugerencias": ["Formal"],
     "coloresEvitar": ["Rojo (color del vestido de la quinceañera)"]
   },
   "contacto": {
@@ -62,7 +62,7 @@
   },
   "regalos": {
     "titulo": "Sugerencia de Regalos",
-    "mensaje": "Lo más importante para mí es celebrar contigo. Si quieres hacerme un regalo, una aportación en efectivo será de gran ayuda.",
+    "mensaje": "Lo más importante para mí es celebrar contigo. Si quieres hacerme un regalo, puede ser lo que tu gustes o una aportación en efectivo, te lo agradecere mucho.",
     "lluviaSobres": "Habrá lluvia de sobres en la fiesta"
   },
   "mensajes": {
