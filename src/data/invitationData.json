@@ -1,0 +1,75 @@
+{
+  "quinceañera": {
+    "nombre": "Zoe",
+    "apellido": "Rojas Castañon"
+  },
+  "evento": {
+    "fecha": "2025-10-18T19:00:00",
+    "fechaTexto": "Sabado 18 de Octubre, 2025",
+    "horaInicio": "5:30 PM"
+  },
+  "lugar": {
+    "nombre": "Finca las Antorchas",
+    "direccion": "Aldama 6, Centro, 43800, Tizayuca, Hgo.",
+    "colonia": "Centro",
+    "ciudad": "Tizayuca",
+    "googleMapsUrl": "https://maps.app.goo.gl/M4rJ5WZ2vh3SriUn9"
+  },
+  "calendario": {
+    "fechaInicio": "20251018T230000Z",
+    "fechaFin": "20251018T280000Z",
+    "titulo": "XV Años de Zoe",
+    "descripcion": "Celebración de los XV años de Zoe - ¡No te lo pierdas!"
+  },
+  "itinerario": [
+    {
+      "hora": "7:00 PM",
+      "evento": "Recepción y Cóctel",
+      "descripcion": "Bienvenida a nuestros invitados",
+      "icono": "Users"
+    },
+    {
+      "hora": "8:30 PM",
+      "evento": "Ceremonia Religiosa",
+      "descripcion": "Misa de Acción de Gracias",
+      "icono": "Heart"
+    },
+    {
+      "hora": "9:30 PM",
+      "evento": "Cena",
+      "descripcion": "Deliciosa cena de tres tiempos",
+      "icono": "Utensils"
+    },
+    {
+      "hora": "11:00 PM",
+      "evento": "Baile y Fiesta",
+      "descripcion": "¡A bailar hasta el amanecer!",
+      "icono": "Music"
+    }
+  ],
+  "vestimenta": {
+    "tipo": "Formal / Elegante",
+    "descripcion": "Te pedimos venir vestido(a) para hacer de esta noche algo muy especial",
+    "sugerencias": ["Colores pasteles", "Tonos neutros"],
+    "coloresEvitar": ["Rojo (color del vestido de la quinceañera)"]
+  },
+  "contacto": {
+    "mama": {
+      "nombre": "Mamá",
+      "telefono": "(56) 2033-8765",
+      "telefonoUrl": "+525620338765"
+    }
+  },
+  "mensajes": {
+    "bienvenida": "La vida es como una canción y mis XV son mi mejor concierto",
+    "cuentaRegresiva": "¡Faltan solo...!",
+    "presencia": "¡Tu presencia es el mejor regalo que puedes darnos!",
+    "contactoTexto": "Para cualquier duda o confirmación de asistencia:"
+  },
+  "colores": {
+    "primario": "#DC2626",
+    "secundario": "#B91C1C",
+    "acento": "#F59E0B",
+    "fondo": "#FEF2F2"
+  }
+}
