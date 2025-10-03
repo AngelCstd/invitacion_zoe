@@ -4,7 +4,7 @@
     "apellido": "Rojas Castañon"
   },
   "evento": {
-    "fecha": "2025-10-18T19:00:00",
+    "fecha": "2025-10-18T17:00:00",
     "fechaTexto": "Sabado 18 de Octubre, 2025",
     "horaInicio": "5:30 PM"
   },
@@ -59,6 +59,11 @@
       "telefono": "(56) 2033-8765",
       "telefonoUrl": "+525620338765"
     }
+  },
+  "regalos": {
+    "titulo": "Sugerencia de Regalos",
+    "mensaje": "Lo más importante para mí es celebrar contigo. Si quieres hacerme un regalo, una aportación en efectivo será de gran ayuda.",
+    "lluviaSobres": "Habrá lluvia de sobres en la fiesta"
   },
   "mensajes": {
     "bienvenida": "La vida es como una canción y mis XV son mi mejor concierto",

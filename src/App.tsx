@@ -5,19 +5,16 @@ import {
   MapPin,
   Phone,
   Heart,
-  Camera,
-  Music,
-  Utensils,
-  Users,
   ExternalLink,
   Plus,
+  Gift,
 } from "lucide-react";
 import invitationData from "./data/invitationData.json";
 
 // Hook para detectar cuando un elemento entra en viewport
 const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -35,12 +32,20 @@ const useIntersectionObserver = (options = {}) => {
     };
   }, [options]);
 
-  return [ref, isIntersecting];
+  return { ref, isIntersecting };
 };
 
 // Componente para elementos animados
-const AnimatedSection = ({ children, className = "", delay = 0 }) => {
-  const [ref, isIntersecting] = useIntersectionObserver({
+const AnimatedSection = ({
+  children,
+  className = "",
+  delay = 0,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+}) => {
+  const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.1,
     rootMargin: "50px",
   });
@@ -144,11 +149,6 @@ function App() {
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${fechaInicio}/${fechaFin}&details=${details}&location=${location}`;
 
     window.open(googleCalendarUrl, "_blank");
-  };
-
-  const getIcon = (iconName) => {
-    const icons = { Users, Heart, Utensils, Music };
-    return icons[iconName] || Heart;
   };
 
   return (
@@ -385,6 +385,42 @@ function App() {
             </div>
           </AnimatedSection>
         </section> */}
+
+      {/* Regalos */}
+      <section className="py-16 bg-white relative overflow-hidden">
+        <div className="absolute top-10 left-10">
+          <Carnation className="opacity-10 animate-pulse" size="w-24 h-24" />
+        </div>
+
+        <AnimatedSection className="max-w-4xl mx-auto px-6 relative z-10">
+          <h2 className="text-4xl font-bold text-red-600 text-center mb-12 animate-slide-in-top">
+            {invitationData.regalos.titulo}
+          </h2>
+
+          <div className="bg-gradient-to-br from-rose-50 to-red-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 animate-card-expand">
+            <AnimatedSection delay={200} className="text-center">
+              <div className="flex justify-center mb-6">
+                <div className="bg-red-500 text-white rounded-full p-6 animate-icon-bounce">
+                  <Gift className="w-12 h-12" />
+                </div>
+              </div>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed animate-fade-in-delayed">
+                {invitationData.regalos.mensaje}
+              </p>
+              <div className="bg-white rounded-lg p-6 shadow-md animate-zoom-in">
+                <p className="text-xl font-semibold text-red-600 flex items-center justify-center">
+                  <Heart className="w-6 h-6 mr-2 animate-heartbeat" />
+                  {invitationData.regalos.lluviaSobres}
+                  <Heart
+                    className="w-6 h-6 ml-2 animate-heartbeat"
+                    style={{ animationDelay: "0.5s" }}
+                  />
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </AnimatedSection>
+      </section>
 
       {/* Código de Vestimenta */}
       <section className="py-16 bg-gradient-to-br from-rose-50 to-red-50 relative overflow-hidden">
