@@ -443,8 +443,8 @@ function App() {
               </p>
             </AnimatedSection>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <AnimatedSection delay={400} className="text-center">
+            <div className="grid gap-8">
+              {/* <AnimatedSection delay={400} className="text-center">
                 <h4 className="text-xl font-semibold text-gray-800 mb-4 animate-slide-in-left">
                   Sugerencias
                 </h4>
@@ -461,16 +461,13 @@ function App() {
                     )
                   )}
                 </ul>
-              </AnimatedSection>
+              </AnimatedSection> */}
 
               <AnimatedSection delay={600} className="text-center">
                 <h4 className="text-xl font-semibold text-red-600 mb-4 animate-slide-in-right">
-                  Colores a Evitar
+                  Colores a Evitar:
                 </h4>
                 <div className="bg-red-50 p-4 rounded-lg animate-warning-glow">
-                  <p className="text-red-600 font-semibold mb-2">
-                    Por favor evitar:
-                  </p>
                   <ul className="text-red-500 space-y-2">
                     {invitationData.vestimenta.coloresEvitar.map(
                       (color, index) => (
