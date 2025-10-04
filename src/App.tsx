@@ -293,7 +293,7 @@ function App() {
                 >
                   <Clock className="w-5 h-5 text-red-400 mr-3" />
                   <span className="text-lg">
-                    {invitationData.evento.horaInicio}
+                    {`${invitationData.evento.horaInicio} - ${invitationData.evento.horaIFin}`}
                   </span>
                 </div>
               </div>

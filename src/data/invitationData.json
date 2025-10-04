@@ -6,7 +6,8 @@
   "evento": {
     "fecha": "2025-10-18T14:00:00",
     "fechaTexto": "Sabado 18 de Octubre, 2025",
-    "horaInicio": "2:30 PM"
+    "horaInicio": "3:00 PM",
+    "horaIFin": "9:00 PM"
   },
   "lugar": {
     "nombre": "Finca las Antorchas",
